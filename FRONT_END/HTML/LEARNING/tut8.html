@@ -1,0 +1,89 @@
+<!--This is the tutorial for  forms and input tags-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+</head>
+
+<body>
+    <a href="/tut3.html" target="_blank">TUT3</a><br>
+    <a href="/tut4.html" target="_blank">TUT4</a><br>
+    <a href="/tut5.html" target="_blank">TUT5</a><br>
+    <a href="/tut6.html" target="_blank">TUT6</a><br>
+    <a href="/tut7.html" target="_blank">TUT7</a><br>
+   <hr>
+   <h3>
+    <strong>BELOW IS THE FORM I  CREATED TO PRACTICE</strong><br>
+</h3>
+<!-- yo tala backend.php coz we assumed yo entry garya data backend ma php ma store garney...-->
+<form action="backend.php">
+<label for="name">NAME:</label>
+  <div>
+    <input type="text" name="Name" id="name">
+    <!-- Here name="Name".Yo backend ma use "Name" bhnera use hunxa.i.e backend ma Name bhnera indicate garera yo data lina sakinxa -->
+</div>
+    <div> 
+        EMAIL: <input type="email" name="MyEmail" id="">
+    </div>
+    <div>  
+        PHONE NO:<input type="text" name="ph.no">
+    </div>
+    <div>  
+        ADDRESS:<input type="text" name="addr">
+    </div>
+    <div>
+       GENDER: Male <input type="radio" name="gender" id="" checked> 
+       Female  <input type="radio" name="gender" id=""> 
+      OTHER <input type="radio" name="gender" id=""> 
+      <!--we use same name=gender here in all male female other because yeso garda 3 option ma euta ma matra tick launa milxa..If eutai name rakhena bhnye all 3 ma tick launa milxa-->
+    </div>
+    <br>
+   co
+    <div>
+        No.of CTFS you have participated: <input type="number" name="ctfs" id="">
+    </div>
+    <div>
+     INTRODUCE YOURSELF:<br><textarea name="myText" id="" cols="30" rows="10"></textarea>
+     <!--TEXTAREA use garesi tyo report lekkhney suggestions bhnera yetro thulo thulo box hunxa ni lekhna testai aauxa-->
+    </div>
+    <div>
+        DATE OF BIRTH: <input type="date" name="dob" id="">
+    </div>
+    <br>
+    <div>
+      <label for="team">PREFERNCE</label>
+      <select name="'myTeam" id="team">
+       <option value="blue_team">BlueTeam</option>
+       <option value="red_team" >RedTeam</option>
+       <option value="purple_team" selected>Purple team</option>
+       <!-- selected ley chai already tyo option selected bhyeko hunxa-->
+    </select>
+    </div>
+   <div>
+    <label for="vote">Are you eligible to vote:</label>
+    
+    Yes <input type="radio" name="yes_vote" id="vote"> No <input type="radio" name="yes_vote" id="vote" checked>
+    <!--radio wala i.e 2ta option tick laune jsto xa bhnye when checked is used tyo option auto selected bhyera user ley dekhxa.-->
+
+   </div>
+   <!--lable layo bhnye chai tyo label ko bhitra in below case accept terms and conditions ma click garesi automatic tick lagxa..if tick na bhyera text wala xa bhnye highligh hunxa ra tyo mouse curson tynha select hunxa.-->
+    <div>
+        <label for="terms">ACCEPT TERMS AND CONDITIONS</label>
+     <input type="checkbox" name="termsNconds " id="terms"> 
+    </div>
+    <div>
+        <input type="submit" value="Submit Now">
+    </div>
+    <div>
+        <input type="reset" value="Reset Now">
+    </div>
+    
+</form>
+
+
+</body>
+
+</html>

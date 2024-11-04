@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box {
+            text-align: center;
+            font-size: 29px;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        /* only screen garepaxi chai tyo condition meet bhaye ni follow hudaina... */
+        @media only screen and(max-width:300px) {
+            #box-1 {
+                display: block
+            }
+        }
+        @media   (max-width:500px)  and (min-width:300px) {
+            #box-3 {
+                display: block;
+            }
+        }
+        @media (max-width:900px)  and (min-width:500px) {
+            #box-2 {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="past">
+        <H2>Previous lectures</H2>
+        <p>
+            To see,learn and revise from Previous lecture
+            <a href="tut29.html"> Click Here</a>
+        </p>
+        <div class="box" id="box-1">I am a smartphone</div>
+        <div class="box" id="box-2">I am laptop</div>
+        <div class="box" id="box-3">I am tablet</div>
+        <div class="box" id="box-4">I am computer with wide-screen</div>
+    </div>
+</body>
+
+</html>

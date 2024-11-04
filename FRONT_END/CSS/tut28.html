@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            height: 500px;
+            width:100%;
+            border:2px solid black;
+            display: flex; /*Initializing flexbox*/
+            /* flex properties for flex container */
+            flex-direction:column;
+            flex-direction: column-reverse;
+
+            flex-direction: row; /*Default value is row*/
+            /* agadi flex direction row lekhera paxi column reverse halda paxadi lekheko ley overwrites... */
+
+
+            flex-wrap: wrap; /*Default value is no-wrap*/
+             /* It makes responsive */
+            flex-flow: row wrap; /*Short hand for flex-direction and flex-wrap*/
+            justify-content: center;
+            /* justify-content: space-between;
+            justify-content: space-evenly; */
+            /* justify-content: space-around;  */
+            align-items: center;
+            /* justify ley horizontally center and align ley vertically center/mid */
+            
+            
+        }
+        .item{
+            height:200px;
+            width:200px;
+            background-color: tomato;
+            border: 3px solid rgb(99, 132, 121);
+            margin: 8px 10px ;
+            padding: 3px;
+
+        }
+      #item-1{
+        /* order: 2; */
+        /* Higher the order later it shows up in the container */
+        /* flex-grow:2 ; */
+        /* flex-shrink: 3; */
+        /* flex-grow: 2; */
+        flex-shrink: 2;
+        /* Container stretch huda tyo box aru bhnda dherai stretch hunxa */
+      }
+      #item-2{
+        /* order: 3; */
+        /* order 3 is greater than order 2 ..so tyo row ko last ma item2 box aauxa ani second last ma item1...testai first ma item-3 hunxa */
+      }
+      #item-3{
+        flex-basis: 420px;
+        /* when flex-direction is set to row flex-basis will control wodth */
+        /* when flex direction is set to column flex-basis will control height */
+      }
+      #item-4{
+        /* flex-grow: 4;
+        flex-shrink:17 ; */
+        order:0;
+      }
+      #item-5{
+        align-self: flex-end;
+      }
+
+    </style>
+</head>
+<body>
+  <h1>Past lectures</h1>
+  <p>let me add past tutorials too over here</p>
+  <a href="tut27.html">TUT27 here</a>
+    <!-- Flexible+box=flexbox -->
+    <h3>THis is Flexbox tutorial</h3>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box </div>
+        <div class="item" id="item-5">Fifth Box </div>
+    </div> 
+    </body>
+   
+   
+</html>

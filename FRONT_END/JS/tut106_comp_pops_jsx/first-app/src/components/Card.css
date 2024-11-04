@@ -1,0 +1,15 @@
+.card{
+    
+    width: 20vw;
+    border: 2px solid black;
+    margin:10px auto;
+    height: 30vh;
+    padding: 4px 6px;
+    text-align: center;
+    overflow: hidden;
+    background-image: url(https://www.hackingwithswift.com/uploads/matrix.jpg);
+    color:rgb(225, 38, 38);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

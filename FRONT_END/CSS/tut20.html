@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /*Remember if its id we use "#"" and if its class we use "."*/
+        *{
+            /*yo universal selector ho ...yesma use bhaako sab ma apply hunxa*/
+            box-sizing: border-box;
+            margin:20px;
+            padding: 0px;
+            /*Muni kunai class wa id ko lagi overwrite chai garna milxa hai*/
+        }
+        body{
+
+            background-color: rgb(30, 123, 108);
+        }
+        .container{
+            height:120px;
+            width: 990px;
+            /*Height ra width ley chai tyo background color ko dabba ko height ra width kati hnxa bhera specify garxa...border ta tei box ko bahira pati hunxa*/
+            background-color: aquamarine;
+            border-top: 3px solid red;
+            border-radius: 20px;
+            /*Padding bhnnaley hamle lekheko text ra tyo border line bich ma katiko gap rakhnye bhnni ho..border jastai padding ni top left bootom right ko lagi specify garna sakinxa*/
+            margin: 30px;
+            /*padding-bottom: 20px;
+            padding-left: 20px;*/
+            padding:2px 30px 30px 18px ;/*padding=top right bottom left..start from top and go clockwise*/
+            
+        }
+        .Note{
+           
+            width:990px;
+             border-radius: 20px;
+            background-color: greenyellow;
+            border:3px solid blue;
+            padding:30px 28px;
+            margin:30px 19px;
+            /* box size use garya xaina bhnyewidth height mention garya xa bhnye ni padding ma bhaako applied hunxa hai*/
+
+        }
+        .Box{
+            color: aliceblue;
+            background-color: black;
+            border:3px solid yellow;
+           border-radius: 20px;
+           padding: 8px 28px;
+           margin:auto;
+           box-sizing: border-box;
+
+
+            
+        }
+    </style>
+</head>
+<body>
+    
+    Let me add tut19 contents here.<br>
+    <a href="tu19.html"> Click here for tut19</a>
+    <div class="Note">
+        Note: if we wanna give padding in top and bottom equal and right and left equal we can do it by padding:y(top/bottom) x(left/right);
+
+        For example:
+        padding: 32px 22px; can be done above
+        I will do the same for this class.just see ok
+
+       </div>
+
+    <div class="container">
+        <h3>This is my first heading</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nihil dolore consequuntur labore quam eius nam provident odio modi repudiandae?Let me write few more sentences here to check how padding works
+    </div>
+
+   <br>
+<strong>
+    Notice the difference in two texts length.is it because of padding??huh!!
+    padding is the space between border and margin is used to maintain gap outside border i.e with neighbouring div
+</strong>
+<br>
+    
+<div class="Box">
+    <h3>This is to know about box size</h3>
+    <p> okay hamle k dekhim bhnye css ma heighr ra width euta hunxa tara padding ma chnge garesi padding ko apply hunxa...So hamley j height width dinxam tei use garna man xa bhnye we use box-sizing</p>
+</div>
+</body>
+</html>

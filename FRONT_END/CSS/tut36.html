@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation & Keyframes</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: rgb(15, 198, 27);
+        }
+        .box{
+            color:white;
+
+            background-color: rgb(57, 154, 12);
+            width:250px;
+            height:300px;
+            position:relative;
+            animation-name: Nabin;
+            animation-name: nabin2;
+            animation-duration: 8s;
+            /* iteration-count ley kati choti animation chalauney bhnera janauxa */
+            animation-iteration-count: 3;
+            /* animation fill mode forwards ma rakhesi...Tyo animation ko end condition ma stop hunxa iteration sakes...feri first ma aaera basdaina..like loading in this case will stuck at 40%..yo narakhya bhye chai feri 0% ma aauthyo */
+            /* animation-fill-mode: forwards; */
+            animation-timing-function: ease-out;
+            /* timing fxn ease out garda first ma fast last ma slow */
+            animation-timing-function: ease-in;
+            /* ease in garda first ma slow last ma fast */
+            animation-timing-function: ease-in-out;
+            /* first slwow than fast than slow */
+            /* animation-delay: 3s; */
+            /* animation-direction: alternate-reverse; */
+            animation: nabin2 5s ease-in-out 2s 12 backwards;
+            /* animation:animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode */
+
+        }
+        @keyframes nabin2{
+            0%{
+                top:0px;
+                left:0px;
+            }
+            25%{
+                top:70px;
+                left:0px;
+            }
+            75%{
+                top:250px;
+                left:250px;
+            }
+            100%{
+                top:250px;
+                left:0px;
+            }
+        }
+        @keyframes Nabin{
+            from{
+                width: 00px;
+
+            }
+            to{
+              width:  40%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+    <hr>
+    <div>Past Lectures</div>
+  <p class="past"> Let me add past lectures <a href="tut35.html" target="_blank" class="past">Click Here</a>
+  </p>  
+</body>
+</html>

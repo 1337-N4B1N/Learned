@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic sort</title>
+</head>
+<body>
+<button>Add note</button>
+<br><br>
+<div class="note"></div>  
+
+  <script>
+    function saveNote(note){
+        localStorage.setItem("note",note)
+
+    }
+    document.querySelector("button").addEventListener("click",()=>{
+
+        let a=prompt("Enter your name")
+    saveNote(a)
+    let ans=localStorage.getItem("note")
+
+    let h=document.querySelector(".note")
+    if(ans){
+        h.innerHTML+="<h1>"+ans+"</h1>"
+
+    }
+   
+    })
+   
+
+
+// if(localStorage.getItem("name"))
+    // {
+    //     name=localStorage.getItem("name")
+        // let a=document.querySelector("body")
+        // a.innerHTML="<h1>Hello"+name+"</h1>"
+    // }
+    // else{
+    //     let name=prompt("Enter your name")
+    //     localStorage.setItem("name",name)
+    //     if(name){
+    //           let a=document.querySelector("body")
+    //     a.innerHTML="<h1>Hello"+name+"</h1>"
+    //     }
+    // }
+    </script>
+</body>
+</html>

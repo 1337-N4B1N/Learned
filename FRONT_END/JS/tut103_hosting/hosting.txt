@@ -1,0 +1,13 @@
+Types of Hosting:
+    a. Shared Hosting
+    b. Dedicated Hosting
+    c. Managed Hosting
+
+also
+ npm i dotenv 
+yo ni hamle install gareko thim hai..
+yo use garesi .env name gareko file banxa.
+over there we keep secrets like password and others  we dont wanna  share to source code
+
+require('dotenv').config()
+console.log(process.env)

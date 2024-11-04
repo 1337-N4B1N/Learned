@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KU FITNESS CENTER</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <style>
+        /* CSS RESET */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+
+            color: whitesmoke;
+            width: 99vw;
+            height: 98vh;
+            margin: 30px 0px;
+            padding: 0px;
+            background: url('img/background.jpg');
+            background-repeat: no-repeat;
+            /* background repeat none is done coz size of background image is smaller than original image and the image was repeating itself to fill completel width. */
+            background-size: cover;
+        }
+
+        .left {
+
+            font-family: 'Baloo Bhai';
+
+            display: inline-block;
+            /* border: 3px solid red; */
+            position: absolute;
+            left: 164px;
+            top: 20px;
+        }
+
+        .mid {
+            text-align: center;
+            margin: 20px auto;
+            display: block;
+            /* border: 3px solid blue; */
+            width: 40%;
+            /* padding:4px auto; */
+        }
+
+        .right {
+            position: fixed;
+            top: 20px;
+            right: 24px;
+            display: inline-block;
+
+            /* float: right; */
+            /* border: 3px solid greenyellow; */
+        }
+
+        .navbar {
+            position: sticky;
+            display: inline-block;
+            margin: 16px auto;
+            /* border: 3px solid aqua; */
+
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 27px;
+            list-style: none;
+
+            margin: 0px 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+
+            text-decoration: underline;
+            color: rgb(160, 156, 156);
+        }
+
+        .left img {
+            height: 69px;
+            width: 177px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            font-size: 18px;
+            color: #eef6e7f4;
+            text-align: center;
+            line-height: 0px;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai';
+            height: 35px;
+            margin: 29px 19px;
+            background-color: rgb(59, 56, 56);
+            color: white;
+            padding: auto 6px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(125, 121, 121);
+        }
+
+        .container {
+            /* display:inline-block; */
+            text-align: center;
+            color: rgb(255, 255, 255);
+            border: 2px solid rgb(253, 251, 251);
+            margin: 106px 150px;
+            padding:0px 75px;
+            border-radius: 28px;
+            width: 33%;
+
+
+        }
+        .container h1{
+            display:block;
+            margin:40px auto;
+            text-align: center;
+        }
+        .form-group input{
+            font-family: 'Baloo Bhai';
+            font-size: 22px;
+            text-align: center;
+            display: block;
+            width:80%;
+            margin:12px auto;
+            padding:12px 30px; ;
+            border-radius: 22px;
+
+        }
+        .container button{
+            display:block;
+            width:33%;
+            margin:auto;
+            margin-bottom:30px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- Left box for logo -->
+            <img src="img/gym_logo.jpg" alt="">
+            <div>KU FITNESS</div>
+
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- Right box for buttons -->
+            <button class="btn">Become a member </button>
+            <button class="btn">Call us now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN THE BEST GYM AROUND KU</h1>
+        <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your name...">
+            <input type="text" name="" placeholder="Enter your age...">
+            <input type="text" name="" placeholder="Enter your gender...">
+            <input type="text" name="" placeholder="Enter your weight...">
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+    </div>
+</body>
+
+</html>

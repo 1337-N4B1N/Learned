@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIDS</title>
+    <style>
+        /* container grid garepaxi container ko bhitra ko kura(in this case item 1-9) grid items hudo raixa.
+        Like  */
+        .container{
+            display: grid;
+            /* background-color: red; */
+            /* grid-template-columns: 300px 200px 100px; */
+            /* grid-template-columns: 300px auto 100px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(3,auto);
+            grid-gap: 2rem ;
+
+        }
+        .item{
+            /* height: 300px;
+            width: 300px; */
+            background-color: rgb(200, 101, 101);
+             padding: 5px;
+             border: 15px 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="past">
+        <h3>
+            Past Lectures
+        </h3>
+        To revise and learn from past lectures <a href="tut39.html" target="_blank" class="past">
+            Click Here!
+        </a>
+        <hr>
+        <br><br><br>  
+        <div class="container">
+             <div class="item">This is Item-1</div>
+             <div class="item">This is Item-2</div>
+             <div class="item">This is Item-3</div>
+             <div class="item">This is Item-4</div>
+             <div class="item">This is Item-5</div>
+             <div class="item">This is Item-6</div>
+             <div class="item">This is Item-7</div>
+             <div class="item">This is Item-8</div>
+             <div class="item">This is Item-9</div>
+        </div>
+</body>
+</html>

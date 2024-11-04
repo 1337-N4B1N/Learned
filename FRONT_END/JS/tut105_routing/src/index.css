@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  background-color: rgb(22, 98, 85);
+  color: rgb(255, 255, 255);
+
+  margin-bottom: 12px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100vw;
+}
+
+a li {
+  /* width: 100%; */
+  width: 25vw;
+  list-style-type: none;
+  margin: 0px auto;
+  padding: 4px 4px;
+  color:whitesmoke;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.red{
+ color:rgb(251, 251, 251);
+
+}

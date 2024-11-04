@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM insertion and deletion</title>
+    <style>
+        .box2{
+            display:block;
+        }
+        .red{
+            color:red;
+        }
+    </style>
+    <!-- document.designMode= "on "    yo console ma gaera lekhyo bhnye kunai ni website edit garna milxa until we refresh-->
+</head>
+<body>
+    <div class="container red bgaqua">
+        <div class="box red" style="display:flex;" data-createdby="Nabin">THis is box</div>
+        <!-- yesari data created by halera kasley banako data ho bhnera store garna milxa -->
+        <div class="box" >THis is another box</div>
+    </div>
+    <div hidden class="hidden" id="hidden">I am hidden</div>
+    <script>
+        let div=document.createElement("div")
+        div.innerHTML="I am created using js &lt;script&gt; <b>HORAA</b>"
+        div.setAttribute("class","script")
+        // document.querySelector(".container").append(div)
+// append ley container bhitra last element ko rup ma append garxa
+        document.querySelector(".container").before(div)
+        // before ley container bhnda agadi not inside container rakhdinxa
+        // after garyo bhnye body bhitra container paxi ko element ko rup ma store hunxa
+        // prepend garyo bhnye chai container ko bhitra ko first childElement ko rup ma store garxa
+    </script>
+    <script>
+        let cont= document.querySelector(".container")
+        cont.insertAdjacentHTML("beforebegin","I am under the <b> WATER PLZ HELP </b>")
+        // yedi text insert garna man bhaye insertAdjacentText
+        cont.setAttribute("class","insertAdjacent")
+        // yedi afterbegin gareko bhaye container ko first element ko rup ma inset hunthyo
+    </script>
+</body>
+</html>
+</html>
+//  documnent.querySelector(".box") ley first element whose class is box lai select garxa 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        
+        .past{
+            color: black;
+            
+            
+        }
+        
+        #box{
+            color:white;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+            height:300px;
+            width:400px;
+            background-color: red;
+            transition-property: background-color;
+            transition-duration: 2s;
+            /* transition delay timing haru animation ko jastai kaam ho same I mean tyo delay timing function ra duration ko */
+            transition-timing-function: ease-out;
+            transition-delay: 0.2s;
+            /* transition short-hand property in one-line */
+            transition:background-color 1s ease-in-out 3s;
+            /* transition:property timing timing-function delay */
+            transition:all 1s ease-in-out 3s;
+            /* opacity margin height haru transition garna sakinxa */
+        }
+        #box:hover{
+            background-color: gold;
+            height:500px;
+            width:300px;
+            border-radius: 22px;
+            font-size: 26px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="past">
+        <h3>
+            Let me add past lectures
+        </h3>
+         To revise and learn from past lectures <a href="tut36.html" target="_blank" class="past">
+            Click Here!
+         </a>
+         <hr>
+    <br><br><br>
+    </div>
+    <h3>This is CSS Transition Tutorial</h3>
+    <div class="container">
+        <div id="box">
+            This is a box
+        </div>
+
+    </div>
+  
+   
+</body>
+</html>
