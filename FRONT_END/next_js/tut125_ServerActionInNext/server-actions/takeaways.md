@@ -1,0 +1,6 @@
+# form-actions
+    tyo form submit garda hamro page haru reload hunxa..tesko lagi hami react ma onSubmit wala fxn banayera prevent default haru garthim.....tara next ma there is another feature which can assist us,,,
+
+  - for that jst create async fxn. which takes input (like mouse click haruma e lethim testai e rakhda hunxa)..ani tesma "use client" jastai "use server" lekhni....
+  - ani teso garesi tyo bhitra "use server" lekhesi page reload chai hunxa xodxa.
+  - tyo e.get("name") bhnera console log garda wa post req send garda....tyo form ma name="" bhanni field xa teslai target garxa hai...
