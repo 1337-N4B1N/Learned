@@ -1,0 +1,1 @@
+This is a note to test how to serve static things using expres..WIll I be able to brose this file from browser or not lets try.

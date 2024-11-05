@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.invertImg{
+    filter:invert(0.23)
+}
+:root {
+    --navbar-height: 64px; /* Set this to match your navbar's height */
+  }

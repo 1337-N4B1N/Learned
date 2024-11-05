@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: whitesmoke;
+            font-weight: bold;
+            text-align: center;
+
+        }
+        div li p{
+            background-color: rgb(7, 81, 81);
+            color:white;
+            font-weight: bold;
+            font-weight: bold;
+
+        }
+        /* div ko bhitra aru kei child nabhyera direct element this is paragraph  ra this is another paragraph bhnnye xa so tesma yo implement hnxa */
+        div > p{
+            background-color: rgb(130, 5, 5);
+            color:whitesmoke
+        }
+        /* div+p garda last sibling k xa tesma lagxa...so this is outermost and this is another paragraph ko latest/last sibling div xa so tyo duita ma apply bhaako ho */
+        div+p{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>
+         TO learn,revise other previous lectures <a href="tut30.html"> Click here</a>
+         <br>
+        </h2>
+        <h1>This tutorial is for more on selectors</h1>
+
+    </div>
+    <div class="container">
+        <div class="row"><ul>
+            <li>This is first list under il but  not under paragraph</li>
+            <li>This is seconind in li  but  not under paragraph</li>
+
+            <li class="item"> <p>This is another paragraph inside list of </p></li>
+
+        </ul>
+
+            <p>This is a paragraph</p>
+            
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

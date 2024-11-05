@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DISPLAY PROPERTY</title>
+    <style>
+        /* display block ley word saano bhaye pani purai block nai linxa bhnye display inline ley jati samma chainxa teti samma matra linxa */
+        /* header is block element */
+       
+       *{
+        box-sizing: border-box;
+       } img{
+            width: 34px;
+            display: block;
+            margin: auto;
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            text-align: center;
+        }
+        header{
+            width: 100%; 
+             margin:8px auto; 
+            border: 2px solid red;
+        }
+        /* If we wanna inline an element but also play with its width we have to use inline block */
+        .box{
+            text-align: center;
+            display: inline-block;
+            border: 3px solid black;
+            background:grey;
+            margin: auto;
+            padding:22px;
+            width:33%;
+            
+        
+        }
+        .container{
+           
+            
+            margin: 8px auto;
+            width:100%;
+            border: 3px solid green;
+           
+        }
+        /* hamle suppose 40% width rakhim harey bhnye if box sizing border border box gareko xa bhnye chai margin ra padding jodera pani box ko width 40% nai rahanxa */
+    </style>
+</head>
+<body>
+    <h2>LETS LEARN CSS DISPLAY PROPERTY</h2>
+        <p>Let me include previous tuts too over here
+            <a href="tut23.html">TUT23 here</a>
+            <br><br><br><br>
+        </p>
+        <header class="top">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIeue6hIVtIsMfkL1QC2OVRU3H01rjz-9i9QpCA2tbOw&s" alt="">
+            <h3>Welcome to my learning</h3>
+        </header>
+
+        <div class="container">
+            <div class="box">
+                <h4 class="heading">HEADING</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem facilis accusantium consectetur consequuntur quod hic! Soluta laboriosam incidunt hic perspiciatis mollitia, inventore itaque nobis exercitationem dolor quaerat dignissimos quod dolores commodi tempora et?</p>
+            </div>
+            <div class="box">
+                <h4 class="heading">HEADING2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem facilis accusantium consectetur consequuntur quod hic! Soluta laboriosam incidunt hic perspiciatis mollitia, inventore itaque nobis exercitationem dolor quaerat dignissimos quod dolores commodi tempora et?</p>
+            </div>
+            <div class="box">
+                <h4 class="heading">HEADING3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem facilis accusantium consectetur consequuntur quod hic! Soluta laboriosam incidunt hic perspiciatis mollitia, inventore itaque nobis exercitationem dolor quaerat dignissimos quod dolores commodi tempora et?</p>
+            </div>
+            <!-- <div class="box">
+                <h4 class="heading">HEADING4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptatem facilis accusantium consectetur consequuntur quod hic! Soluta laboriosam incidunt hic perspiciatis mollitia, inventore itaque nobis exercitationem dolor quaerat dignissimos quod dolores commodi tempora et?</p>
+            </div>
+        </div> -->
+</body>
+</html>

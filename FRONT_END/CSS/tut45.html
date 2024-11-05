@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Grid and Media_Query</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+
+        }
+
+        @media only screen and (max-width: 300px) {
+            
+            body {
+                background-color: brown;
+
+            }
+
+            /* #box1{
+                display: block;
+                background-color: cadetblue;
+            } */
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            .container {
+            
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+
+        }
+            /* #box2{
+                display: block;
+                background-color: blueviolet;
+            } */
+            body {
+                background-color: aquamarine;
+            }
+            aside{
+                display: none;
+            }
+            span{
+            display: block;
+            text-align: center;
+        }
+        }
+
+        @media (min-width:500px) and (max-width:800px) {
+            .container {
+            
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+
+        }
+            /* #box-3{
+                    display: block;
+                    color: black;
+                    background-color: aqua;
+                } */
+            body {
+                background-color: red;
+            }
+            span{
+            display: block;
+            text-align: center;
+        }
+        }
+
+        @media (min-width:800px) {
+
+            /* #box-4{
+                    display: block;
+                    background-color: rgb(59, 156, 59);
+                } */
+            body {
+                background-color: palegreen;
+            }
+
+        }
+
+        .border-now {
+            border: 2px solid black;
+            padding: 13px 22px;
+            background-color: wheat;
+        }
+
+     nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="past">
+        <h3>
+            Past Lectures
+        </h3>
+        To revise and learn from past lectures <a href="tut44.html" target="_blank" class="past">
+            Click Here!
+        </a>
+    </div>
+    <br><br><br>
+    <hr>
+    <br><br><br>
+    <div class="container">
+        <nav class="border-now">
+            <span>Home</span>
+            <span>About me </span>
+            <span>Service </span>
+            <span>Contact</span>
+        </nav>
+        <section class="border-now">
+            <h2>Learn CSS in Nepali</h2>
+        </section>
+        <aside class="border-now">
+            <h1>More about me</h1>
+        </aside>
+    </div>
+    <footer class="border-now">
+        CopyRight Content - N@l31N_K4FL3
+    </footer>
+
+</body>
+
+</html>

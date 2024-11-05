@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .box{
+            background-color: aqua;
+            border: 2px solid red;
+        }
+        .grid{
+            display:grid;
+            grid-template-rows:2fr 1fr 4fr ; /*yesari garda first second ra third row ko matra specify hunxa..*/
+            grid-auto-rows: 1fr; /*Mathi baaki raheko sabai  rows jasko lagi mention gareko xaina  aba 1fr  hnxa*/
+            grid-template-columns: 1fr 2fr 2fr;
+            grid-row-gap:1rem;
+            grid-column-gap: 2rem;
+            /* grid-template-columns:repeat(4,2fr) ; */
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <div class="box">This is a box-1</div>
+        <div class="box">This is a box-2</div>
+        <div class="box">This is a box-3</div>
+        <div class="box">This is a box-4</div>
+        <div class="box">This is a box-5</div>
+        <div class="box">This is a box-6</div>
+        <div class="box">This is a box-7</div>
+        <div class="box">This is a box-8</div>
+        <div class="box">This is a box-9</div>
+        <div class="box">This is a box-10</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <br><br><br>
+    <div class="past">
+        <h3>
+            Past Lectures
+        </h3>
+        To revise and learn from past lectures <a href="tut40.html" target="_blank" class="past">
+            Click Here!
+        </a>
+        <hr>
+          
+</body>
+</html>

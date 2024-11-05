@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: rgb(240, 224, 205);
+            padding:8px 30px;
+            height:2081px;
+            width: 100%;
+        }
+
+        /* position: static(default),absolute,relative,fixed,sticky */
+        .box {
+            text-align: center;
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 4px;
+        }
+
+        /* if tyo box li right left shift gara tesko original position ma we need gap then we use relative if we don't need gap than we use absolute */
+
+    
+        #box3 {
+            /* top ra bottom bhneko tesko parent in this case it is div container ko border bata kati mathi tala bhnnye ho */
+            position: absolute;
+           
+            top: 180px;
+            left: 123px;
+            
+
+
+        }
+        #box5{
+            position:fixed;
+            right: 4px;
+            background-color: aqua;
+        }
+        #box7{
+            position:sticky;
+            top:8px;
+
+        }
+
+    </style>
+    <!-- relative:moves with relative to  original position and leaves a gap at its original position -->
+    <!-- absolute:moves with relative to position of its first parent position.In the absence of any parent element, the HTML element will be placed relative to the page.-->
+</head>
+
+<body>
+    <h2>Previous Lectures</h2>
+    <p>Let me add the previous notes too first of all <a href="tut24.html">Click Here</a> for previous lectures </p>
+    <h2>LET THE BOXES BEGIN</h2>
+     <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+     </div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <style>
+        body{
+
+            margin:0px;
+            padding:0px;
+            background-color: black;
+            color: whitesmoke;
+            /* background:url(https://www.fairobserver.com/wp-content/uploads/2021/04/Guy-Fawkes-gunpowder-plot.jpg) no-repeat center center/cover; */
+        }
+        
+        section{
+            justify-content: center;
+            align-items: center;
+            margin:4px 230px;
+            display:flex;
+            flex-direction: column;
+            /* border: 2px solid red; */
+            padding: 4px 18px;
+            /* height:344px; */
+        }
+        section::before{
+            content: "this is a content before section";
+        }
+        section::after{
+            content: "this is a content after section";
+        }
+        .navigation{
+            font-size: 22px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding:10px 24px;
+        }
+        h1{
+         font-size: 4rem;   
+        }
+        a{
+            color:white;
+        }
+        header::before{
+            content:"";
+            background:url(https://www.fairobserver.com/wp-content/uploads/2021/04/Guy-Fawkes-gunpowder-plot.jpg) no-repeat center center/cover;
+            position: absolute;
+            /* top:0;
+            left:0; */
+            height:100%;
+            width:100%;
+            z-index:-1;
+            opacity:0.3;
+        }
+        
+    </style>
+</head>
+<body>
+   <header>
+    <nav class="navbar">
+        <ul class="navigation">
+            <li class="item">Home</li>
+            <li class="item">About</li>
+            <li class="item">Services</li>
+            <li class="item">Contact US</li>
+        </ul>
+
+    </nav>
+    
+</header>
+
+<section>
+    <h1>Welcome TO hacking world...!</h1>
+    <p>DOn't forget Don't forgive Be legion expect us with Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel iste nobis dolores officiis quos nisi consequuntur quasi vitae error.</p>
+</section>
+<hr>
+    <div>
+        <h2>Previous Lectures</h2>
+        <p class="past">To revise and learn from previous lectures <a href="tut32.html " target="_blank"> Click here</a></p>
+    </div>
+</body>
+</html>

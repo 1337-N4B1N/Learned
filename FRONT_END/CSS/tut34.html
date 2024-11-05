@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box&Text Shadow</title>
+    <style>
+        .past
+        {
+            color:black;
+        }
+        .container{
+            display: flex;
+        }
+        .card{
+            margin:2px 7px;
+            padding:12px 24px;
+            border:2px solid red;
+            background-color:burlywood;
+            color: white;
+                    /* box shadow:offsex-x offset-y color */
+
+            box-shadow:-10px 13px  blue;
+            /* box shadow:offsex-x offset-y blur-radius color */
+
+            box-shadow:-10px 13px 24px 13px blue;
+            /* box shadow:offsex-x offset-y blur-radius spread-radius color  */
+            box-shadow:-10px 13px 4px  blue;
+            /* box shadow upper side of box ma use ve garney bhaye use -ve numbers when giving px if we want box shadow in downward part use +ve value while giving px */
+            box-shadow:-10px 13px 4px  rgba(12, 141, 221, 0.5);
+            /* tyo rgba ma a works for darkness */
+            box-shadow: inset 10px 10px rgb(171, 48, 195);
+
+        }
+        .card h2{
+            text-shadow:3px -4px rgb(0, 0, 0)  ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+           <h2> This is learning</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aperiam eveniet dolore nemo, consequuntur nostrum voluptates suscipit autem, illo quam atque illum?</p>
+        </div>
+        <div class="card" id="car-2">
+            <h2>This is no earning only learning</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur rerum tempora quos placeat quae quo exercitationem assumenda natus repellat! Facilis, voluptate.</p>
+        </div>
+        <div class="card" id="car-3">
+           <h2> Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quod perspiciatis, odio assumenda eaque tenetur quas quis iste neque nobis, dolorem iusto.</p>
+        </div>
+        <div class="card" id="car-4">
+           <h2>Card4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate, et alias veniam, accusantium quasi odit aliquid quam, ut illum odio iure!</p>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h3>Previous lectures</h3>
+        <p>TO revise or lear from previous lecures <a href="tut33.html" target="_blank" class="past">Click here</a></p>
+    </div>
+</body>
+</html>

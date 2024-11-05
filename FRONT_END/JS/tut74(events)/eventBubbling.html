@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child{
+            background-color:wheat ;
+            border:2px solid black;
+            padding:20px 44px;
+            margin:34px;
+            cursor: pointer;
+        }
+        .childContainer{
+            background-color:aqua ;
+            padding:20px 44px;
+            margin:34px;
+           
+            cursor: pointer;
+        }
+        .container{
+            background-color: purple ;
+            padding:20px 44px;
+            margin:34px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                I am a child
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // document.querySelector(".child").addEventListener("click", () => {
+        //     alert("CHild is clicked")
+        // })
+        // document.querySelector(".childContainer").addEventListener("click", () => {
+        //     alert("CHildContainer is clicked")
+        // })
+        // document.querySelector(".container").addEventListener("click", () => {
+        //     alert("Container is clicked")
+        // })
+        // yesari garda child ma click gareni childcontainer container sab ko alert aauxa(event bubbling bhnxa teslai) to prevent it we use stop propagation..the code is below 
+        document.querySelector(".child").addEventListener("click", (e) => {
+           e.stopPropagation();
+            alert("CHild is clicked")
+        })
+        document.querySelector(".childContainer").addEventListener("click", () => {
+            e.stopPropagation();
+            alert("CHildContainer is clicked")
+        })
+        document.querySelector(".container").addEventListener("click", () => {
+            e.stopPropagation();
+
+            alert("Container is clicked")
+        })
+        // we can also remove event handler the same way we have added it
+
+        function getRandomColor(){
+    let val1=Math.ceil(0+Math.random()*255)
+    let val2=Math.ceil(0+Math.random()*255)
+    let val3=Math.ceil(0+Math.random()*255)
+    return `rgb(${val1},${val2},${val3})`
+}
+//    let a= setInterval(()=>
+//     {
+//         document.querySelector(".child").style.background=getRandomColor()
+//     },3000)
+//     console.log(a)
+// setTimeout ley chai ekchoti matra garxa while setInterval ley chai as a loop gareko garai garxa
+   let a= setTimeout(()=>
+    {
+        document.querySelector(".child").style.background=getRandomColor()
+    },3000)
+    console.log(a)
+// here 3000 is in ms which means its actually 3sec
+    </script>
+    <!-- console ma gaera clearTimeout ra clearInterval garera fxn rokna sakinxa -->
+</body>
+<!-- when we click on child as chid is under childCOntainer which itself is inside container so childCOntainer is also clicked -->
+</html>

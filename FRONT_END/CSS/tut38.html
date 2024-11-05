@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CSS Transform
+    </title>
+    <style>
+        /* *{
+
+        } */
+        .box {
+            display:flex;
+            color: white;
+            background: brown;
+            border: 2px solid black;
+            border-radius: 8px;
+            height: 400px;
+            width: 400px;
+            align-items: center;
+            justify-content: center;
+           transition:all 1s ease-in-out;
+        }
+        .box:hover{
+            /* rotate garda kheri fin fini ghumxa */
+            /* transform:rotate(45deg); */
+            /* skew garyo bhnya tilt hunxa */
+            /* transform: skew(45deg); */
+            /* scale ley magnify garxa */
+            transform: scale(2);
+            /* translate X ley horizontally shift garxa where +ve is right and -ve is left side */
+            transform:translateX(-93px);
+            transform:translate(80px,80px)
+        }
+
+        .container {
+            height:80vh;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="past">
+        <h3>
+            Past Lectures
+        </h3>
+        To revise and learn from past lectures <a href="tut37.html" target="_blank" class="past">
+            Click Here!
+        </a>
+        <hr>
+        <br><br><br>
+        <div class="container">
+            <div class="box">
+                this is box
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and custom properties</title>
+    <style>
+        /* box bhitra banako variable i.e --box-color ko scope is only within box.So hami aba root ma banauxam..jasko chai global scope hnxa */
+        :root{
+            --primary-color:blue;
+            --danger-color:red;
+            --maxh:300px;
+            --maxw:700px;
+        }
+        /* body{
+             background-color: black; 
+        } */
+        /* .past{
+            color:white;
+        } */
+        .container{
+            /* justify-content: center; */
+            max-width: var(--maxw);
+            margin:auto;
+
+            display:flex;
+            background-color: var(--primary-color);/
+        }
+        .box{
+            color: antiquewhite;
+            --box-color:rgba(62, 62, 119,0.5);
+            width:200px;
+            height:200px;
+            background-color:var(--danger-color);
+            border:3px solid green;
+            margin:4px 24px;
+            /* margin: auto; */
+            box-shadow: 4px 10px var(--box-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+    <hr>
+    br*5;
+    <div>
+    <h3>Past lectures</h3>
+    <p class="past">To revise past lectures/tutorials   <a href="tut34.html" target="_blank" class="past">Click Here</a></p>
+    </div>
+</body>
+</html>
